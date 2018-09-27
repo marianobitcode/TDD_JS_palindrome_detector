@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Palindrome Tester</title>
+    <meta charset="utf-8">
+    <script src="bundle.js"></script>
+  </head>
+  <body>
+    <h1>Palindrome Tester</h1>
+    <!-- form-handling in general requires having a back-end web application on the server
+    (such as that provided by Sinatra or Rails),
+    we can fake it with JavaScript by adding an event listener to intercept the resulting "submit" event -->
+    <form id="palindromeTester">
+      <textarea name="phrase" rows="10" cols="30"></textarea>
+      <br>
+      <button type="submit">Is it a palindrome?</button>
+    </form>
+
+    <h2>Result</h2>
+    <p id="palindromeResult" style="font-weight: bold;"></p>
+  </body>
+</html>
